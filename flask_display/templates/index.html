@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display the Result</title>
+</head>
+<style type="text/css">
+	h1{
+		text-align: center;
+	}
+	form{
+		text-align: center;
+		padding-bottom: 50px;
+		padding-top: 10px;
+	}
+	.display_option{
+		border-bottom: 6px solid #3455DB;
+		background-color: lightgrey;
+	}
+	table{
+		margin: auto auto;
+	}
+	tr:first-child{
+		font-weight: bold;
+		font-size: 20px;
+
+	}
+	td{
+		padding-left: 20px;
+		border-bottom: 2px solid #7E7E7E;
+	}
+	.content{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+</style>
+<body>
+<h1>Display the result of scrapping</h1>
+<div class='display_option'>
+	<form action="/" method='POST'>
+		<h2>Display {{display_type}}</h2>
+		<select name="display">
+		  <option value="skills">Top Skills</option>
+		  <option value="company">Companies</option>
+		  <option value="people">People</option>
+		</select>
+		<input type="submit" value="Submit">
+	</form>	
+</div>
+<div class='content'>
+	<table>
+		{% for i in data: %}
+			<tr>
+				{% for j in i: %}
+					<td>{{j}}</td>
+				{% endfor %}
+			</tr>
+		{% endfor %}
+	</table>
+</div>
+
+
+</body>
+</html>

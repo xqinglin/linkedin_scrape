@@ -47,4 +47,5 @@ The display choices for users:
 	4.Histogram. 
 >**You would be able to view the display of all choices except the second one 'Flask Website'. 
 6. Enter 'cd flask_display' to enter the flask folder. (Please install all package in requirement before running). Then run **'Python app.py'** to start the server. Open 'http://127.0.0.1:5000/' in browser and the result will be displayed~
+>** Notice that if keep scrapping, the linkedin will kick you out and ask you do a test. In this is case, you have to do the a test like 'Pick all cars from image' before continue to scrape. 
 

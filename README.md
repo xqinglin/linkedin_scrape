@@ -37,7 +37,7 @@ The main file for running the app and also the start point.
 1. Download a browser driver, prefer **Chrome Driver**. 
 > **download**: http://chromedriver.chromium.org/downloads
 2. pip install all the packages for both main fold and flask folder. 
->**There are two **requirements.txt**. One is in the main folder, another one is in 'flask_display'.  Both of them are used.
+>**There are two** **requirements.txt**. One is in the main folder, another one is in 'flask_display'.  Both of them are used.
 3. Get into the current folder place and run **'python linkedin_scrape.py'** in terminal. The program will guide you enter company and the number of profile you want to scrape, also give you option to insert new data into database or rebuild the whole database. 
 4. At the end the running, the terminal will give you choices of display type. 
 The display choices for users: 
@@ -45,7 +45,7 @@ The display choices for users:
 	2.Flask Website(**quit and run flask**) 
 	3.Map 
 	4.Histogram. 
->**You would be able to view the display of all choices except the second one 'Flask Website'. 
+>You would be able to view the display of all choices except the second one 'Flask Website'. 
 6. Enter 'cd flask_display' to enter the flask folder. (Please install all package in requirement before running). Then run **'Python app.py'** to start the server. Open 'http://127.0.0.1:5000/' in browser and the result will be displayed~
->** Notice that if keep scrapping, the linkedin will kick you out and ask you do a test. In this is case, you have to do the a test like 'Pick all cars from image' before continue to scrape. 
+>** Notice** if keep scrapping, the linkedin will kick you out and ask you do a test. In this is case, you have to do the a test like 'Pick all cars from image' before continue to scrape. Ensure your internet is in good quality.  
 
